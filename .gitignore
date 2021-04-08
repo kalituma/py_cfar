@@ -4,4 +4,4 @@ nohup.out
 SAR-Ship-Dataset/*
 build/*
 *.jpg
-
+.idea/*
