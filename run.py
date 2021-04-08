@@ -14,7 +14,7 @@ import sys
 import shutil
 import os
 
-data_dir = '/media/nasir/Drive1/code/SAR/python_cfar/SAR-Ship-Dataset'
+data_dir = '/home/SAR-Ship-Dataset'
 
 def union_area(a,b):
 
@@ -125,9 +125,7 @@ def predict(paths, data_dir, source, dest, i):
 if __name__ == "__main__":
     # source = "subset"
     source = "JPEGImages"
-
     dest = "boxes_drawn"
-    
     num_of_process = 20
 
     paths = glob.glob(f"{data_dir}/{source}/*.jpg")
