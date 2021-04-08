@@ -2,7 +2,7 @@ from xml.dom.minidom import parse, parseString
 import glob
 import sys
 
-data_dir = '/media/nasir/Drive1/code/SAR/python_cfar/SAR-Ship-Dataset'
+data_dir = '/home/ship_detection_online'
 paths = glob.glob(f"{data_dir}/Annotations_new/*.xml")
 
 for index in range(0, len(paths)):
