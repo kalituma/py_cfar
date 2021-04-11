@@ -2,12 +2,12 @@ from xml.dom.minidom import parse, parseString
 import glob
 import sys
 
-data_dir = '/home/ship_detection_online'
+data_dir = '/home/dataset'
 paths = glob.glob(f"{data_dir}/Annotations_new/*.xml")
 
 for index in range(0, len(paths)):
     path = paths[index]
-    gt_path = path.replace('Annotations_new', 'ground-truth').replace('.xml', '.txt')
+    gt_path = path.replace('Annotations_new', 'ground_truth').replace('.xml', '.txt')
     with open(gt_path, 'w') as f1:
         dom1 = parse(path)  # parse an XML file by name
 

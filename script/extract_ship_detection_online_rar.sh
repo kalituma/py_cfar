@@ -1,7 +1,7 @@
 #!/bin/bash
-# execute this in dataset path
-unrar e ship_detection_online.rar
-mkdir Annotations_new
+cd /home/dataset
+mkdir /home/dataset/Annotations_new
 find . -name '*.xml' -exec mv {} Annotations_new \;
+mkdir ground_truth
 mkdir JPEGImages
 find . -name '*.jpg' -exec mv {} JPEGImages \;

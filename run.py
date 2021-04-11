@@ -14,7 +14,7 @@ import sys
 import shutil
 import os
 
-data_dir = '/home/ship_detection_online'
+data_dir = '/home/dataset'
 
 def union_area(a,b):
 
