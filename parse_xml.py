@@ -1,9 +1,12 @@
 from xml.dom.minidom import parse, parseString
 import glob
 import sys
+import os
 
 data_dir = '/home/dataset'
 paths = glob.glob(f"{data_dir}/Annotations_new/*.xml")
+if not os.path.exists(os.path.join(data_dir, 'ground_truth')):
+    os.mkdir(os.path.join(data_dir, 'ground_truth'))
 
 for index in range(0, len(paths)):
     path = paths[index]
